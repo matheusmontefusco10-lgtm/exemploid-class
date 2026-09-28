@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes CSS</title>
+  <link rel="shortcut icon" href="html.ico" type="image/x-icon"><!--Adicionar o favicon aq no cabeçalho-->
+
+<link rel="stylesheet" href="idlass.css">
+
+ <style>
+        body {
+    font: 12pt Arial; background-color: rgb(199, 201, 181); 
+        }
+
+#primeiro-titulo {
+    text-align: center; font-size: 2.4em; font-weight: bold; color: blue;
+        }
+/* em css # refere-se ao elemento id do html  (apenas 1 por documento doc html*/
+/* em css . refere-se ao elemento class do html (podemos ter varios no mesmo html)*/
+
+/* todas as listas são definidas com a mesma . class */
+.lista {
+    background-color: #e3f2fd;
+    padding: 20px 40px;
+    border: 2px solid #2196f3;
+    border-radius: 8px;
+}
+
+.lista li {
+    margin-bottom: 8px;
+}
+
+.lista dt {
+    font-weight: bold;
+    color: #e65100;
+    margin-top: 10px;
+}
+
+.lista dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f4f4f4;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+
+        .padrao {
+            font-family: Arial, Helvetica, sans-serif;text-align: center; text-indent: 50p; font-weight: bold; background-color: blue;
+        }
+
+        .google {
+            font-family: 'Pacifico', cursive; color: coral;
+        }
+
+        .local {
+            font-family: 'Minha Fonte', sans-serif; color: rgb(159, 13, 13);
+        }
+
+h2 {
+    color: #090909;
+}
+        #contato {
+            font-family: Arial, Helvetica, sans-serif;text-align: center; text-indent: 50p; font-weight: bold; background-color: rgb(173, 173, 195);
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="primeiro-titulo">Id e Classes em CSS &#x1F605;</h1>
+   
+    <h2>Criação de tabelas para HTML:</h2>
+<table>
+<h3>lista-ordenada</h3>
+    <ol type="1" class="lista">
+    <li>Planejar a página</li>
+    <li>Criar a estrutura HTML</li>
+    <li>Adicionar o CSS</li>
+    <li>Testar a página</li>
+</ol>
+
+<h3>lista-nao-ordenada</h3>
+ <ul class="lista">
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>Java</li>
+    <li>C#</li>
+</ul>
+<h3>lista-descricao</h3>
+
+<dl class="lista">
+    <dt>HTML</dt>
+    <dd>Linguagem utilizada para estruturar o conteúdo de uma página.</dd>
+
+    <dt>CSS</dt>
+    <dd>Linguagem utilizada para estilizar e definir a aparência da página.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>Linguagem utilizada para adicionar interatividade às páginas.</dd>
+</dl>
+</table>
+
+<table>
+    <caption>Tecnologias que domino</caption>
+    <thead>
+      <tr>
+        <th>Tecnologia</th>
+        <th>Categoria</th>
+        <th>Nível de Proficiência</th>
+        <th>Observações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>HTML5</td>
+        <td>Frontend</td>
+        <td>Avançado</td>
+        <td>Estrutura semântica, acessibilidade</td>
+      </tr>
+      <tr>
+        <td>CSS3</td>
+        <td>Frontend</td>
+        <td>Avançado</td>
+        <td>Flexbox, Grid, animações</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Frontend</td>
+        <td>Avançado</td>
+        <td>DOM, ES6+, eventos</td>
+      </tr>
+      <tr>
+        <td>React</td>
+        <td>Frontend</td>
+        <td>Intermediário</td>
+        <td>Hooks, componentes funcionais</td>
+      </tr>
+      <tr>
+        <td>Node.js</td>
+        <td>Backend</td>
+        <td>Intermediário</td>
+        <td>APIs REST, Express.js</td>
+      </tr>
+      <tr>
+        <td>MongoDB</td>
+        <td>Banco de Dados</td>
+        <td>Básico</td>
+        <td>Modelagem de dados NoSQL</td>
+      </tr>
+      <tr>
+        <td>Git</td>
+        <td>Versionamento</td>
+        <td>Avançado</td>
+        <td>Branches, merge, GitHub</td>
+      </tr>
+    </tbody>
+  </table>
+
+    <h2 class="padrao">Segunda parte da aula: identificação de class</h2>
+
+   <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatem itaque inventore incidunt amet hic modi voluptas dolor? 
+    </p>
+
+
+
+    </p>
+
+   <h3 class="google"> Seletor para Google</h3>
+
+    <p>Lorem ipsum <span class="padrao">dolor sit amet consectetur</span> adipisicing elit. Repudiandae soluta saepe odio aspernatur incidunt architecto aliquid ipsum minus asperiores? 
+
+    </p>
+    
+
+    <h3 class="local">Seletor local</h3>
+
+    <p >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatibus a mollitia nisi ducimus pariatur cupiditate. 
+    </p>
+
+    <h2 class="padrao">Segunda parte da aula: identificação de class</h2>
+   
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt voluptatem itaque inventore incidunt amet hic modi voluptas dolor?
+    
+</p>
+
+<h3 class="google"> Seletor para Google</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae soluta saepe odio aspernatur incidunt architecto aliquid ipsum minus asperiores? 
+        
+    </p>
+    
+
+    <h3 class="local">Seletor local</h3>
+
+    <p >
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus voluptatibus a mollitia nisi ducimus pariatur cupiditate. 
+    </p>
+
+    <section id="contato">
+      <h2>Informações de Contato</h2>
+      <p> <strong>Email:</strong><address>matheus.oliveira@email.com</address></p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/matheusmontefusco" target="_blank">linkedin.com/in/matheusmontefusco</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/matheusmontefusco" target="_blank">github.com/MatheusMontefusco</a></p>
+    <p><strong>Sócio:</strong> <a href="curriculo interno.html" target="_self" rel="external"> Matheus Montefusco de Oliveira </a></p>
+    
+    </section>
